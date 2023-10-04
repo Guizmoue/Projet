@@ -11,4 +11,4 @@ Cours 2 : 27/09
 01/10
 * J'ai recommancer la procedure depuis le debut, cette fois j'ai pu generer avec succes une nouvelle paire de cle Ed25119 que j'ai lie a mon compte Github. J'ai cloner mon dossier sur mon pc avec la commande git clone <URL SSH>, recuperant ainsi tout le contenu de mon dossier. Depuis le terminal, j'ai modifie mon journal de bord en l'editant (cmd : nano journal.md => "01/10 : Teste en ligne de commande") puis j'ai rentre les commandes add, commit et push pour envoyer les nouvelles modifications sur le serveur Github. Enfin je suis alle sur mon Github pour determiner si mes modifications ont bien ete prises en compte, cependant la procedure a echoue puisque aucunes des modifications faites en ligne de commande n'est apparu dans mon journal de bord.
 * De plus, apres avoir actualise (cmd : git pull) en ligne de commande les lignes fraichement ecrites juste ci-dessus n'apparaissent pas lorsque je suis dans mon terminal, a la date du 01/10 il est uniquement afficher "01/10 : Teste en ligne de commande". Il semble qu'il y ait un conflit entre Github et ma machine mais a ce jour je ne comprends pas pourquoi.
-* 
+* Test en ligne de commande 
