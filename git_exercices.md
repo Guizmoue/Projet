@@ -1,5 +1,7 @@
 # Git - Github
 
+## Git I
+
 ### Exercice 2.b
 1. Pour verifier si l'on est en retard par rapport a la version en 
 ligne il faut executer la commande : <code>git status</code>. 
@@ -14,3 +16,7 @@ git add git_exercices.md
 git commit -m "exercice fini" git_exercices.md
 git push origin
 </pre></code>
+
+## Git II
+
+
