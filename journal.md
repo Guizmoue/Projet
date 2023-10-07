@@ -40,6 +40,8 @@ etaient en conflit. Pour resoudre ce conflit il nous faut d'abord annuler les ch
 local, pour cela on utilise la commande "reset --hard HEAD" puis recuperer la version en ligne 
 avec la commande "git pull", enfin on execute la procedure habituelle soit git add -> commit -> push.
 
-**07/10**
-* Mise a jour des cours et exercices.
-
+**07/10** 
+* Nous avons cree un tag au debut de notre exercice pour pouvoir retourner a la 
+version de notre Github datant de la pose du tag. De mon point de vue le tag agit comme un 
+super commit, il sert de repere dans le temps. 
+* Cependant, je ne comprends pas bien l'interet de defaire les commit sans defaire les add ?

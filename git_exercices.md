@@ -19,4 +19,19 @@ git push origin
 
 ## Git II
 
+### Exercice 1.b
+* Pour recuperer l'identifiant SHA il faut executer la commande : <code>git 
+log</code>. * Pour defaire le commit on execute la commande : <code>git 
+commit id_SHA</code>.
+
+### Exercice 2.a
+* Pour retourner a la version du tag on effectue la commande : <code>git 
+reset git-seance3-init</code>.
+
+### Exercice 2.b
+* Pour copier les chamgement effectue dans le fichier "oups.md" dans 
+mon journal de bord il faut utiliser la commande : <code>cat oups.md 
+>> journal.md</code>. Cela permet de copier le contenu le "oups.md" 
+dans "journal.md" sans ecraser le contenu de "journal.md". * Enfin, 
+supprimer le fichier "oups.md" en executant la commande : <code>rm -f  oups.md</>.
 
