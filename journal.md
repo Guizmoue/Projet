@@ -41,5 +41,5 @@ local, pour cela on utilise la commande "reset --hard HEAD" puis recuperer la ve
 avec la commande "git pull", enfin on execute la procedure habituelle soit git add -> commit -> push.
 
 **07/10**
-
+* Mise a jour des cours et exercices.
 
