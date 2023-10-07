@@ -44,7 +44,7 @@ On obtient le top 10 des lieux les plus cités avec leur occurrence, soit :
 - 78 Champs-Élysées
 - 77 Allemagne
   
-*e) Trouvez les annotyations les plus frequentes pour votre mois de naissance, toutes annees confondues*
+*e) Trouvez les annotyations les plus frequentes pour votre mois de naissance, toutes annees confondues*  
 Je suis né au mois d'août donc :
 <pre><code>
 wc -l *_08_*.ann | sort -rn | head
