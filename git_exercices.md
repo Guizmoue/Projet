@@ -29,9 +29,7 @@ commit id_SHA</code>.
 reset git-seance3-init</code>.
 
 ### Exercice 2.b
-* Pour copier les chamgement effectue dans le fichier "oups.md" dans 
-mon journal de bord il faut utiliser la commande : <code>cat oups.md 
->> journal.md</code>. Cela permet de copier le contenu le "oups.md" 
-dans "journal.md" sans ecraser le contenu de "journal.md". * Enfin, 
+* Pour copier les chamgement effectue dans le fichier "oups.md" dans mon journal de bord il faut utiliser la commande : <code>cat oups.md 
+>> journal.md</code>. Cela permet de copier le contenu le "oups.md" dans "journal.md" sans ecraser le contenu de "journal.md". * Enfin, 
 supprimer le fichier "oups.md" en executant la commande : <code>rm -f  oups.md</>.
 
