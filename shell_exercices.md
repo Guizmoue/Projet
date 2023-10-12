@@ -54,7 +54,7 @@ wc -l *_08_*.ann | sort -rn | head -n2
 L'annotation du 5 aout 2017 est la plus frequente avec 89 occurences.
 
 ### Argument d'un script
-*Exercice1 
+*Exercice1*   
 Pour lancer le script tapez : <code>bash second_script.sh [argument]</code>. La 
 boucle while nous permet de generer les chiffres pour chacune des annees. Puis on appel le
 premier_script.sh en lui donnant annee et le type en argument.
@@ -77,7 +77,7 @@ do
 done
 </pre></code>
 
-Le second_script.sh est lance a chaque tout de boucle.
+Le second_script.sh est lance a chaque tour de boucle.
 <pre><code>
 #!/user/bin/bash
 
@@ -95,7 +95,7 @@ EXE=$(cat $FILE_PATH | egrep -w $KEYWORD | wc -l)
 echo "Pour l'annee 201$YEAR le mot '$KEYWORD' apparait : $EXE fois"
 </pre></code>
 
-*Exercice2
+*Exercice2*  
 En reprenant la commande de l'exercice d) on obtient le script suivant :
 <pre><code>
 #!/user/bin/bash
@@ -114,4 +114,4 @@ echo $SEARCH
 </pre></code> 
 Cependant, je n'ai pas reussi a faire la derniere partie permetant au script2.sh de prendre 
 l'etoile Kleene en argument, car il y a un probleme au niveau de la condition if. Seul les
-variable de meme type peuvent faire l'objet de comparaison.
+variables de meme type peuvent faire l'objet de comparaison.
