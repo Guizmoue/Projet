@@ -114,4 +114,69 @@ echo $SEARCH
 </pre></code> 
 Cependant, je n'ai pas reussi a faire la derniere partie permetant au script2.sh de prendre 
 l'etoile Kleene en argument, car il y a un probleme au niveau de la condition if. Seul les
-variables de meme type peuvent faire l'objet de comparaison.
+variables de meme type peuvent faire l'objet de comparaison. Pour que le programme accepte l'argument *
+il faut rajouter un antislash : \*.
+
+*Exercice condition if*  
+Nous avons repris et modifie les scripts precedents en leur ajoutant des conditions if.  
+Pour script_1.sh:
+<pre><code>
+#!/user/bin/bash
+
+#On declare les variables
+WORD=$1
+COMPTEUR=6
+MAX=8
+
+#On indique le chemin vers le script execute dans la boucle while
+SCRIPT_PATH="./script_2.sh"
+
+##On execute la boucle while a condition que l'argument donne en entree ne soit pas une chaine de caractere vide
+if [[ -z $WORD ]];
+then
+        echo "Veuillez saisir un mot !"
+else
+#La boucle while itere sur les chiffres 6, 7 et 8 et lance le premier_script.sh a chaque tour de boucle
+        while [[ $COMPTEUR -le $MAX ]];
+        do
+                bash $SCRIPT_PATH $COMPTEUR $WORD
+                COMPTEUR=$((COMPTEUR+1))
+        done
+fi
+</pre></code>
+
+Pour script_3.sh : nous avons utilise des expressions regulieres pour definir la fenetre des annees et 
+mois acceptable en argument.
+<pre><code>
+#!/user/bin/bash
+
+#On recupere les arguments dans des variables
+YEAR=$1
+MONTH=$2
+LINES=$3
+FILE_PATH="../../Fichiers/ann/$YEAR/$MONTH/*.ann"
+
+#Condition if pour l'annee
+if [[ $YEAR =~  201(6|7|8) ]];
+then
+        #Condition if pour le mois
+        if [[ $MONTH =~ 0[0-9]|1[0-2] ]];
+        then
+                #Condition if pour le nombre de ligne
+                if [[ -n $LINES ]];
+                then
+                        #On cherche le resulat de notre requete
+                        SEARCH=$(egrep -w  "Location" $FILE_PATH | cut -f3 | sort -n | uniq -c | sort -nr | head -n$LINES)
+                        #On affiche le resultat de notre requete
+                        echo $SEARCH
+                else
+                        echo "Erreur ligne"
+                fi
+        else
+                echo "Erreur mois"
+
+        fi
+else
+        echo "Erreur annee"
+fi
+</pre></code>

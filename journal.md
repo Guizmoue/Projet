@@ -45,3 +45,11 @@ avec la commande "git pull", enfin on execute la procedure habituelle soit git a
 version de notre Github datant de la pose du tag. De mon point de vue le tag agit comme un 
 super commit, il sert de repere dans le temps. 
 * Cependant, je ne comprends pas bien l'interet de defaire les commit sans defaire les add ?
+
+**21/10** 
+* Dans un premier temps mon groupe et moi meme avions pense choisir le mot "laic" ou 
+"laicite", mais ces termes sont trop specifique au francais et par concequent difficilement 
+transposable dans une langue autre que le francais. Puis Zhongjie a propose le terme "etranger", que 
+je trouve interressant a analyser et qui pourrait nous apporter des cles de comprehension sur la 
+perception de l'autre, du lointain dans chacune des langues choisie. Enfin je propose le mot 
+"liberte", a ce jour nous n'avons pas encore enterine notre choix.

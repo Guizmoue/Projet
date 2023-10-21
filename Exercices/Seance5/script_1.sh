@@ -5,9 +5,10 @@ WORD=$1
 COMPTEUR=6
 MAX=8
 
-#On indique le chemin vers le premier script
+#On indique le chemin vers le script execute dans la boucle while
 SCRIPT_PATH="./script_2.sh"
 
+##On execute la boucle while a condition que l'argument donne en entree ne soit pas une chaine de caractere vide
 if [[ -z $WORD ]];
 then
 	echo "Veuillez saisir un mot !"

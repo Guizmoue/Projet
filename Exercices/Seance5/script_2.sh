@@ -1,6 +1,6 @@
 #!/user/bin/bash
 
-#On recupere les arguments donne dans le premier_script.sh
+#On recupere les arguments donne dans script_1.sh
 YEAR=$1
 KEYWORD="$2"
 
