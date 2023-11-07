@@ -30,7 +30,7 @@ do
 	#A la variable CODE_HTTP on associe la valeur du code http de la page. 
 	CODE_HTTP=$(curl -Is ${line} | egrep -ow "HTTP.*?[0-9]{3}" | cut -d ' ' -f2)
 	#A la variable SET on associe la valeur de l'encodage de la page.
-	SET=$(curl -Is ${line} | egrep -o "\bcharset=.*?\b")
+	SET=$(curl -Is ${line} | egrep -o "\bcharset=.*?\b" | tr -d "charset=")
 	
 	#Si le code http de la page a pour valeur 301 alors : 
 	if [ $CODE_HTTP -eq 301 ];
@@ -46,4 +46,3 @@ do
 	#On incremente notre compteur de 1 a chaque tour de boucle
 	I=$(expr $I + 1)
 done < $URLS
-
