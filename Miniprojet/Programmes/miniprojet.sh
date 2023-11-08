@@ -11,7 +11,7 @@ if [ $# -eq 1 ];
 then
 	echo "Ok !"
 else
-	echo "On attend un fichier en argument"
+	echo "On attend un argument en entree !"
 	exit
 fi
 
@@ -20,7 +20,7 @@ if [ -f $URLS ];
 then
 	echo "Ok !"
 else
-	echo "On attend un fichier en argument"
+	echo "On attend un fichier en argument !"
 	exit
 fi
 
@@ -32,6 +32,10 @@ do
 	#A la variable SET on associe la valeur de l'encodage de la page.
 	SET=$(curl -Is ${line} | egrep -o "\bcharset=.*?\b" | tr -d "charset=")
 	
+	#Correction
+	#Pour suivre les redirections : curl -s -I -L -w "%{http_code}" -o /dev/null adresse
+	#Pour recuperer les encodages : curl -s -I -L -w "%{content_code}" -o /dev/null adresse | grep -P -o "charset=\S+" | cut -d "=" -f2
+
 	#Si le code http de la page a pour valeur 301 alors : 
 	if [ $CODE_HTTP -eq 301 ];
 	then
