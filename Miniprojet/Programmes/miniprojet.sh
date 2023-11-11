@@ -2,14 +2,15 @@
 
 #On definit la variable URL qui a pour valeur l'argument 1
 URLS=$1
-
 #On initialise un compteur I a 1
 I=1
+#On stoke le resutat de notre requete dans un tableur selon le chemin
+TSV="../Textes/tab.tsv"
 
 #On verifie que le nombre d'argument est egale a 1, sinon on arrete le programme
 if [ $# -eq 1 ];
 then
-	echo "Ok !"
+	:
 else
 	echo "On attend un argument en entree !"
 	exit
@@ -18,7 +19,7 @@ fi
 #On verifie que le fichier donne en argument existe, sinon on arrete le programme
 if [ -f $URLS ];
 then
-	echo "Ok !"
+	:
 else
 	echo "On attend un fichier en argument !"
 	exit
@@ -49,4 +50,4 @@ do
 	fi
 	#On incremente notre compteur de 1 a chaque tour de boucle
 	I=$(expr $I + 1)
-done < $URLS
+done < $URLS > $TSV
