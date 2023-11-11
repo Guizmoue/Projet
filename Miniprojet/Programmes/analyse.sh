@@ -20,7 +20,7 @@ else
 	exit
 fi
 
-#On affiche sut la sortie standart les variables DATA et NB.
+#On affiche sur la sortie standart la variable DATA.
 #echo "${DATA}"
 
 #On cherche uniquement les mots, tout en minuscule

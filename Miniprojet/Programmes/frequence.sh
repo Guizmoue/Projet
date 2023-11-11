@@ -27,8 +27,9 @@ else
 	exit
 fi
 
-echo "Pour le texte : ${TXT}, nous recherchons les /${LINES}/ mots les plus frequent du texte."
+#Message de verification
+#echo "Pour le texte : ${TXT}, nous recherchons les /${LINES}/ mots les plus frequent du texte."
 
-#On appelle notre code : analyse.sh
+#Determiner la frequence d'un mot a l'aide du script analyse.sh
 FREQ=$(bash ${SCRIPT1} ${TXT} | sort | uniq -c | sort -nr | head -n${LINES})
 echo "${FREQ}"
