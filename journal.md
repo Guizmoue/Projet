@@ -53,3 +53,12 @@ transposable dans une langue autre que le francais. Puis Zhongjie a propose le t
 je trouve interressant a analyser et qui pourrait nous apporter des cles de comprehension sur la 
 perception de l'autre, du lointain dans chacune des langues choisie. Enfin je propose le mot 
 "liberte", a ce jour nous n'avons pas encore enterine notre choix.
+
+**28/10** 
+* Notre groupe a choisi de traiter le mot : Intelligence Artificielle en francais, 
+anglais et mandarin pour le projet de PPE.
+
+**11/11** * Je ne suis pas satisfait de mon code pour l'exercice du tableau html (voir script 
+: tab_to_html.sh) du miniprojet. Je n'ai pas trouve de solution pour rediriger en une seul 
+fois la sortie standart de mon code bash dans un fichier html. J'ai ecris des bouts de code 
+ html que j'ai emplie les uns a la suite des autres grace aux doubles chevrons.
