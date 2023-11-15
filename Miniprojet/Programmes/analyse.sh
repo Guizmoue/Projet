@@ -24,5 +24,8 @@ fi
 #echo "${DATA}"
 
 #On cherche uniquement les mots, tout en minuscule
-MOT=$(egrep -o "\w+" $DATA | tr [:upper:] [:lower:])
+MOT=$(grep -P -o "\p{Latin}+" $DATA | tr '[:upper:]' '[:lower:]' | tr 'ÉÀÈ' 'éàè')
 echo "${MOT}"
+
+#Pour saisir tous les caracteres la latin grep -P - o "p{Latin}"
+#Pour saisir tous les caracteres chinois grep -P - o "p{Han}"

@@ -14,9 +14,9 @@ RESULT="../Textes/resultat_bigramme.txt"
 
 #On contitue 2 listes de mots: 
 #LIST1 duquel on a retire le dernier mot puis stocke selon le chemin FILE1.
-LIST1=$(egrep -o "\w+" ${TEXT} | head -n -1 > ${FILE1})
+LIST1=$(bash ${SCRIPT1} ${TEXT} | head -n -1 > ${FILE1})
 #LIST2 duquel on a retire le premier mot puis stocke selon le chemin FILE2.
-LIST2=$(egrep -o "\w+" ${TEXT} | tail -n +2 > ${FILE2})
+LIST2=$(bash ${SCRIPT1} ${TEXT} | tail -n +2 > ${FILE2})
 
 #On recupere le resultat de la variable bigramme dans le fichier qui a pour chemain RESULTAT
 BIGRAMME=$(paste -d ' ' ${FILE1} ${FILE2} | sort | uniq -c | sort -nr > ${RESULT})

@@ -5,7 +5,7 @@ TSV="../Textes/tab.tsv"
 #A la variable TAB on attribut le chemin vers le fichier html.
 TAB="../Tableaux/tableau-fr.html"
 
-echo -e "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Tableau</title>\n\t<meta charset="UTF-8" />\n</head>" > $TAB
+echo -e "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Tableau</title>\n\t<meta charset=\"UTF-8\">\n</head>" > $TAB
 echo -e "<body><table>\n\t<tr>\n\t\t<th>indice</th><th>url</th><th>code http</th><th>charset</th>\n\t</tr>" >> $TAB
 for L in {1..6}
 do
