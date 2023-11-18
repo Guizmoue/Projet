@@ -43,4 +43,4 @@ transposable dans une langue autre que le francais. Puis Zhongjie a propose le t
 **18/11**
 * Nous avons avons desormais commence la collecte de donnees. Nous souhaitons consituer notre corpus a partir de divers documents a porte academique comme des revues universitaires, des articles scientifiques ou journalistiques mais aussi incluant des debats philosophiques etc. Le but etant de collecter des pour et des contre enrichi d'analyses et de critiques.
 * J'ai rencontre quelques difficulte avec la bibliotheque bulma pourtant je suis familier avec la programmation web. A titre de comparaison, je trouve que la documentation ainsi que l'utilisation de la bibliotheque Bootstrap est bien plus simple a appréhender.
-* Bien que je sois arrive au terme de l'exercice, un detail m'echappe. Je ne comprends pas comment desactiver la reponsiveness de la page, car en dessous de des que px les onglets 'Home' et 'Table' du menu disparaissent.
+* Bien que je sois arrive au terme de l'exercice, un detail m'echappe. Je ne comprends pas comment desactiver la reponsiveness de la page, car en dessous de 1023spx les onglets 'Home' et 'Table' du menu disparaissent.
