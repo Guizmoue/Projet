@@ -1,5 +1,10 @@
 #1/bin/bash/env
 
+
+
+
+
+
 ligne=1
 while read -r URL
 do

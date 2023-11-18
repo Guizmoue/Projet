@@ -62,3 +62,6 @@ anglais et mandarin pour le projet de PPE.
 : tab_to_html.sh) du miniprojet. Je n'ai pas trouve de solution pour rediriger en une seul 
 fois la sortie standart de mon code bash dans un fichier html. J'ai ecris des bouts de code 
  html que j'ai emplie les uns a la suite des autres grace aux doubles chevrons.
+
+**18/11**
+* Nous avons avons desormais commence la collecte de donnees. Nous souhaitons consituer notre corpus a partir de divers documents a porte academique comme des revues universitaires, des articles scientifiques ou journalistiques mais aussi incluant des debats philosophiques etc. Le but etant de collecter des pour et des contre enrichi d'analyses et de critiques. 

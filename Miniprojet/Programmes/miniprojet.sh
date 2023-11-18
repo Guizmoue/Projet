@@ -31,11 +31,11 @@ do
 	#A la variable CODE_HTTP on associe la valeur du code http de la page. 
 	CODE_HTTP=$(curl -Is ${line} | egrep -ow "HTTP.*?[0-9]{3}" | cut -d ' ' -f2)
 	#A la variable SET on associe la valeur de l'encodage de la page.
-	SET=$(curl -Is ${line} | egrep -o "\bcharset=.*?\b" | tr -d "charset=")
+	SET=$(curl -ILs ${line} | egrep -o "\bcharset=.*?\b" | tr -d "charset=")
 	
 	#Correction
-	#Pour suivre les redirections : curl -s -I -L -w "%{http_code}" -o /dev/null adresse
-	#Pour recuperer les encodages : curl -s -I -L -w "%{content_code}" -o /dev/null adresse | grep -P -o "charset=\S+" | cut -d "=" -f2
+	#Pour suivre les redirections : curl -s -I -L -w "%{http_code}" -o /dev/null $line
+	#Pour recuperer les encodages : curl -s -I -L -w "%{content_code}" -o /dev/null $line | grep -P -o "charset=\S+" | cut -d "=" -f2
 
 	#Si le code http de la page a pour valeur 301 alors : 
 	if [ $CODE_HTTP -eq 301 ];
